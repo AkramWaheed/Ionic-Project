@@ -29,7 +29,8 @@ location:{
         }
 
       }
-      this.weatherProvider.getWeather(this.location.city, this.location.state).subscribe(weather => {this.weather = weather.current_observation;
+      this.weatherProvider.getWeather(this.location.city, this.location.state)
+      .subscribe(weather => {this.weather = weather.current_observation;
       });
     });
  
